@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollTrigger&Timeline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="page1" class="h-screen w-full bg-green-200"></div>
+
+    <div id="page2" class="h-screen w-full bg-purple-400">
+        <div id="box" class="h-40 w-28 bg-slate-800"></div>
+    </div>
+
+    <div id="page3" class="h-screen w-full bg-emerald-500"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    
+    <script>
+        //video 6
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to("#box", {
+            x: 700,
+            duration: 5,
+            scrollTrigger: {
+                trigger: "#box",
+                markers: true,
+                start: "top 60%",
+                end: "top 40%",
+                scrub: 4,
+            }
+        });
+    </script>
+</body>
+</html>

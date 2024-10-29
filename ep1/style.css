@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+}
+
+#page1 {
+    display: flex;
+    gap: 3vw;
+}
+
+.box {
+    height: 10vw;
+    width: 10vw;
+    background-color: crimson;
+    border-radius: 1vh;
+}
+
+

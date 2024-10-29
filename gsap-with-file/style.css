@@ -1,0 +1,12 @@
+
+
+body {
+    background-color: black;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    background-color: orangered;
+}
